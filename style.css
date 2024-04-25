@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+body {
+  background: #001e4d;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app,
+.showScore,
+.info {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 30px 30px 0px 30px;
+  margin: 17px;
+}
+.showContent,
+.showScore {
+  display: none;
+}
+.app h1 {
+  font-size: 2rem;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+}
+.quiz {
+  padding: 20px 0;
+}
+.quiz h2 {
+  font-size: 1.2rem;
+  color: #001e4d;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.btn {
+  background-color: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+}
+.btn:disabled {
+  cursor: no-drop;
+}
+#nextBtn,
+#restartBtn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 23%;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  border-radius: 4px;
+  display: none;
+}
+#startBtn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 23%;
+  border: 0;
+  padding: 11px;
+  margin: 3% 38%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.green {
+  background: #9aeabc;
+}
+.red {
+  background: #ff9393;
+}
+#timer {
+  padding-top: 10px;
+}
+input[type="radio"] {
+  margin: 0px 6px 16px 0px;
+  height: 20px;
+  width: 20px;
+}
+label {
+  font-size: 20px;
+  position: relative;
+  bottom: 3px;
+  left: 4px;
+}
+@media only screen and (max-width: 600px) {
+  #restartBtn {
+    width: 35%;
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Quiz-App</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="./css/all.min.css">
+   </head>
+   <body>
+      <div class="info">
+         <div class="select">
+            <h3 style="margin:10px 0px 15px 0px;">
+            Choose any category to test your knowledge!</h1>
+            <input name="cateogry" type="radio" id="Sports" value="Sports">
+            <label for="Sports">Sports</label>
+            <br />
+            <input name="cateogry" type="radio" id="Geography" value="Geography">
+            <label for="Geography">Geography</label>
+            <br />
+            <input name="cateogry" type="radio" id="IT" value="IT">
+            <label for="IT">CS / IT</label>
+         </div>
+         <button id="startBtn">Start</button>
+      </div>
+      <div class="showContent">
+         <div class="app">
+            <h1>Simple Quiz</h1>
+            <div class="quiz">
+               <h2 id="question"></h2>
+               <div id="ansBtns">
+               </div>
+               <div id="timer">Time Left : <span id="time"></span> seconds</div>
+               <button id="nextBtn"></button>
+            </div>
+         </div>
+      </div>
+      <div class="showScore">
+         <h1>Simple Quiz</h1>
+         <div class="quiz">
+            <h2 id="scoreId" style="color:#22bb33;"></h2>
+            <div id="ansBtns"></div>
+            <div id="timer" style="display: none;">Time Left : <span id="time"></span></div>
+            <button id="restartBtn" style="display: block;"></button>
+         </div>
+      </div>
+      <script type="module" src="index.js"></script>
+   </body>
+</html>
